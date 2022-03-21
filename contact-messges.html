@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.all.min.css' rel='stylesheet'/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <!-- menu section for Dashboard -->
+    <section id="menu" >
+        <!-- logo part -->
+        <div class="logo">
+            <img src="images/area.png" alt="">
+            <h2>Pretty</h2>
+        </div>
+        <!-- side bar nav links for my Blog -->
+        <div class="nav-item">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="index.html">Dashboard</a></li>
+                <li><i class="fa-solid fa-plus"></i><a href="createblog.html">Create Blog</a></li>
+                <li><i class="fa-solid fa-list-check"></i><a href="list-blog.html">Blogs</a></li>
+                <li><i class="fa-solid fa-message"></i><a href="contact-messges.html">Messages</a></li>
+                <!-- <li>User tools</li> -->
+                <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+            </ul>
+            
+        </div>
+
+    </section>
+    <section id="displayer">
+        <div class="nav-bar">
+            <div class="part1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="far fa-bell"></i>
+                <img src="images/woman.png" alt="">
+            </div>
+        </div>
+        <h3 class="header-name"> 
+            Contact Messages
+        </h3>
+      
+
+        <!-- table which contain blog content -->
+
+        <dir class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Email</th>
+                        <td>Subject</td>
+                        <td>Message</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="blog-title"> <p>john jacke</p> </td>
+                        <td class="person"> 
+                            <h5> john@gmail.com</h5>
+                         </td>
+                         <td class="blog-title"> <p>Tech</p> </td>
+                        <td class="b-content"> <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing ....</p>
+                             </td>
+
+                    </tr>
+                    <tr>
+                        <td class="blog-title"> <p>emmanual</p> </td>
+                        <td class="person"> 
+                            <h5> emmanual@gmail.com</h5>
+                         </td>
+                         <td class="blog-title"> <p>Science</p> </td>
+                        <td class="b-content"> <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing ....</p>
+                             </td>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </dir>
+
+    </section>
+
+    <script>
+       $('menu-btn').click(function(){
+           $('#menu').toggleClass("active");
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+/* styling menu bar */
+#menu
+{
+    background-color: #140801;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* header of side menu bar */
+#menu .logo 
+{
+ display: flex;
+ align-items: center;
+ color: #fff;
+ padding: 30px 0 0 25px;
+ 
+}
+#menu .logo img
+{
+ width: 40px;
+ margin-right: 15px;
+
+}
+
+#menu .nav-item
+{
+    margin-top: 40px;
+}
+
+#menu .nav-item 
+{
+    margin-top: 40px;
+}
+
+#menu .nav-item li
+{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+/* here style our nav by putting hover */
+#menu .nav-item li:hover{
+    background-color: #1b1309;
+    cursor: pointer;
+}
+#menu .nav-item li:nth-child(1){
+    border-left: 4px solid #fff;
+}
+#menu .nav-item li i
+{
+   color: rgb(134, 141, 151);
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   font-size: 14px;
+   margin: 0 10px 0 25px;
+   list-style-type: none;
+}
+
+#menu .nav-item ul li a 
+{
+    color: rgb(134, 141, 151);
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+#menu .nav-item ul li i:hover ,
+#menu .nav-item ul li a:hover {
+    color: #F3f4f6;
+}
+
+/* displayer interface style */
+
+#displayer {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#displayer .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid rgb(255, 153, 1);
+    position: fixed;
+    width: calc(100% - 300px);
+}
+/* search bar */
+#displayer .nav-bar .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+#displayer  .search i{
+    margin-right: 4px;
+}
+/* removing border and outline on the input field */
+#displayer  .search input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+/* customizing profile picture side on the nav bar */
+#displayer .nav-bar .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#displayer .nav-bar .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#displayer .nav-bar .profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    align-items: center;
+}
+
+
+/* CENTER OF DASHOBOARD */
+
+.part1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn{
+    display: none;
+    color: #2e1e0b;
+    font-size: 20px;
+    cursor: point;
+    margin-right: 20px;
+}
+.header-name
+{
+    color: #000;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+/* styling my cards */
+
+.info-cards{
+    padding: 30px 30px 0 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+#displayer .info-cards .user-card{
+    background: rgb(245, 234, 220);
+    width: 235px;
+    padding: 16px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#displayer .info-cards .user-card i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right:15px ;
+}
+
+.info-cards .user-card:nth-child(1) i{
+    background-color: #bb6e16;
+}
+.info-cards .user-card:nth-child(2) i{
+    background-color: #f3b815;
+}
+.info-cards .user-card:nth-child(3) i{
+    background-color: #eb7311;
+}
+
+
+#displayer .info-cards .user-card h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+#displayer .info-cards .user-card span{
+    font-size: 15px;
+    color: #828997;
+}
+
+/* styling table */
+
+.board
+{
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+.board h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+.board p{
+    font-weight: 600;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #eef0f3;
+}
+thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #d3e7dd;
+    text-align: start;
+    padding: 15px;
+
+}
+tbody tr td{
+    padding: 10px 15px;
+}
+
+.status p{
+    background: #f8bb76;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2e1e0b;
+}
+.p-action a{
+    text-decoration: none;
+    font-size: 14px;
+    color: orange;
+    font-weight: 600;
+}
+
+/* media query for ipad Mini size  width 768 height 1024 */
+
+@media (max-width: 769px) {
+    #menu {
+        position: fixed;
+        left: -270px;
+        transition: 0.3s ease;
+    }
+    #menu.active {
+        left: 0px;
+    }
+    #menu-btn {
+        display: initial;
+    }   
+    #displayer {
+        width: 100%;
+        margin-left: 0px;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+    #menu.active~#displayer{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+        transition: 0.3s ease;
+    }
+    #displayer .nav-bar {
+
+        width: 100%;
+    }
+    .info-cards {
+        padding: 30px 30px 0 30px;
+        justify-content: flex-start;
+
+    }
+
+    #displayer .info-cards .user-card {
+        
+        padding: 16px 10px;
+        margin: 10px 0px 10px 0px;
+     
+    }
+    .board thead tbody{
+        width: 10%;
+        padding: 0px;
+        overflow-x: auto;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;    
+    }
+     
+}
+@media (max-width:375px) {
+    #displayer .nav-bar{
+        padding: 15px;
+    } 
+    #displayer .nav-bar .search input{
+        padding: 150px;
+        overflow-x: auto;
+    }
+
+}
+
+
+
+
+
+
+
+/* stlying create blog */
+.heart{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center ;
+    padding: 16px;
+    column-gap: 2px;
+}
+.container{
+max-width: 100%;
+width: 100%;
+padding: 25px 30px;
+border-radius: 5px;
+margin-bottom: 150px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    
+}
+form .user-details .input-box
+{
+    margin:20px 0 12px 0 ;
+    width: calc(100% / 2 - 6px);
+}
+.user-details .input-box .details
+{
+    display: block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6  ;
+
+}
+form .button{
+    height: 45px;
+    width: 50%;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background:#c4710c;
+    border-radius: 5px;
+    /* padding-left: 500px; */
+    
+}
+
+form .button input:hover{
+    background: rgb(146, 103, 37);
+}
+
+@media (max-width: 584px) {
+  .container{
+    max-width: 100%;
+   }
+   form .user-details .input-box
+   {
+    margin-bottom: 15px;
+    width:100%
+   }
+   .container .user-details .user-details
+{
+    max-height: 300px;
+    overflow-y: scroll;
+
+}
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+    
+}
